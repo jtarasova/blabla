@@ -1,0 +1,51 @@
+<p>
+  OUR USER:
+  {{userId}}
+
+</p>
+<form action='/user/signup' method='post'>
+  <div class='mb-3'>
+    <label for='exampleInputNickName1' class='form-label'>Name</label>
+    <input
+      name='nickName'
+      type='text'
+      class='form-control'
+      id='exampleInputNickName1'
+    />
+  </div>
+
+  <div class='form-check'>
+    <input
+      class='form-check-input'
+      type='radio'
+      name='lifeStyle'
+      id='flexRadioDefault1'
+      value='rap'
+    />
+    <label class='form-check-label' for='flexRadioDefault1'>
+      Rap
+    </label>
+  </div>
+  <div class='form-check'>
+    <input
+      class='form-check-input'
+      type='radio'
+      name='lifeStyle'
+      id='flexRadioDefault2'
+      value='rock'
+    />
+    <label class='form-check-label' for='flexRadioDefault2'>
+      Rock
+    </label>
+  </div>
+  <div class='mb-3'>
+    <label for='exampleInputPassword1' class='form-label'>Password</label>
+    <input
+      name='password'
+      type='password'
+      class='form-control'
+      id='exampleInputPassword1'
+    />
+  </div>
+  <button type='submit' class='btn btn-primary'>Submit</button>
+</form>
